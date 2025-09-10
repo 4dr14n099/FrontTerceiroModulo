@@ -27,6 +27,8 @@ import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { NavComponent } from './components/template/nav/nav.component';
 import { FormaPagamentoCrudComponent } from './view/forma-pagamento-crud/forma-pagamento-crud.component';
+import { PecasCrudComponent } from './view/pecas-crud/pecas-crud.component';
+import { ClientesCrudComponent } from './view/clientes-crud/clientes-crud.component';
 
 registerLocaleData(localePt)
 
@@ -37,6 +39,8 @@ registerLocaleData(localePt)
     FooterComponent,
     NavComponent,
     FormaPagamentoCrudComponent,
+    PecasCrudComponent,
+    ClientesCrudComponent,
   ],
   imports: [
     BrowserModule,
