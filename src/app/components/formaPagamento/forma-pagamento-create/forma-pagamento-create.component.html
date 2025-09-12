@@ -1,0 +1,30 @@
+<mat-card>
+    <mat-card-title>Nova Forma de Pagamento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="formaPagamento.forNome" name="forNome">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-select placeholder="Tipo" [(ngModel)]="formaPagamento.tipo" name="tipo">
+                <mat-option value="Crédito">Crédito</mat-option>
+                <mat-option value="Débito">Débito</mat-option>
+                <mat-option value="Boleto">Boleto</mat-option>
+                <mat-option value="Pix">Pix</mat-option>
+                <mat-option value="Dinheiro">Dinheiro</mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <mat-checkbox [(ngModel)]="formaPagamento.ativo" name="ativo">
+            Ativo
+        </mat-checkbox>
+    </form>
+
+    <button mat-raised-button (click)="createFormaPagamento()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

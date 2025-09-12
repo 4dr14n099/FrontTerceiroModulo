@@ -29,6 +29,8 @@ import { NavComponent } from './components/template/nav/nav.component';
 import { FormaPagamentoCrudComponent } from './view/forma-pagamento-crud/forma-pagamento-crud.component';
 import { PecasCrudComponent } from './view/pecas-crud/pecas-crud.component';
 import { ClientesCrudComponent } from './view/clientes-crud/clientes-crud.component';
+import { FormaPagamentoCreateComponent } from './components/formaPagamento/forma-pagamento-create/forma-pagamento-create.component';
+import { ClientesCreateComponent } from './components/Clientes/clientes-create/clientes-create.component';
 
 registerLocaleData(localePt)
 
@@ -41,6 +43,8 @@ registerLocaleData(localePt)
     FormaPagamentoCrudComponent,
     PecasCrudComponent,
     ClientesCrudComponent,
+    FormaPagamentoCreateComponent,
+    ClientesCreateComponent,
   ],
   imports: [
     BrowserModule,
